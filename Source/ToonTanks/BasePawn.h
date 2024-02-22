@@ -13,24 +13,7 @@ class TOONTANKS_API ABasePawn : public APawn
 	
 public:
 	// Sets default values for this pawn's properties
-	ABasePawn();
-
-	
-
-    UPROPERTY(VisibleInstanceOnly)
-    int32 instanceOnlyInt = 12;
-
-	UPROPERTY(VisibleDefaultsOnly)
-	int32 VisibleDefaultOnlyInt = 5;
-
-	UPROPERTY(EditDefaultsOnly)
-	int32 EditDefaultInt = 9;
-	
-    UPROPERTY(EditInstanceOnly)
-    int32 EditInstanceInt = 9;
-		 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float speed = 400.f;
+	ABasePawn(); 
 
 protected:
 	// Called when the game starts or when spawned
@@ -52,8 +35,4 @@ private:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 };
