@@ -37,13 +37,6 @@ protected:
 	virtual void BeginPlay() override;
 	
 private:	
-
-    UPROPERTY(VisibleAnywhere,Category = "Super Duper Variables", BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
-    int32 VisibleAnywhereInt = 12;
-
-    UPROPERTY(EditAnywhere, Category = "Super Duper Variables", meta = (AllowPrivateAccess = "true"))
-    int32 EditAnywhereInt = 22;
-
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	class UCapsuleComponent* CapsuleComp;
 
